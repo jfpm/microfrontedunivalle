@@ -6,15 +6,14 @@ import singleSpaReact from "single-spa-react";
 import Root from "./root.component";
 import "./App.css";
 
-const lifecycles = singleSpaReact({
+/*const lifecycles = singleSpaReact({
   React,
   ReactDOM,
   rootComponent: Root,
   errorBoundary(err, info, props) {
-    // Customize the root error boundary for your microfrontend here.
-    return null;
+    return {errors:err, info: info, props: props};
   },
-});
+});*/
 
 function App() {
   const [token, setToken] = useState("");
@@ -32,6 +31,6 @@ function App() {
   return <>{token === "" ? <Login /> : <WebPlayback token={token} />}</>;
 }
 
-export const { bootstrap, mount, unmount } = lifecycles;
+//export const { bootstrap, mount, unmount } = lifecycles;
 
 export default App;

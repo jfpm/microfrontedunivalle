@@ -11,4 +11,5 @@ module.exports = {
     template: '<div id="spotify-web-player"></div>',
   }),
   activeWhen: ["/"],
+  //activeWhen: ["/spotify-web-player"],
 };
