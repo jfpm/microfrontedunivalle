@@ -73,6 +73,9 @@ export default function Nav() {
                         <ListItem button onClick={() => handleClick('/react')} selected={selectedItem === "react"}>
                             <ListItemText primary="App React" />
                         </ListItem>
+                        <ListItem button onClick={() => handleClick('/spotify-web-player')} selected={selectedItem === "react"}>
+                            <ListItemText primary="Web Player" />
+                        </ListItem>
                     </List>
                 </div>
             </Drawer>
